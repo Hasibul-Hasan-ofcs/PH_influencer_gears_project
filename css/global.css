@@ -1,0 +1,92 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body,
+html {
+  font-size: 10px;
+  font-family: "Poppins", sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+h1 {
+  font-weight: 700;
+  font-size: 5.2rem;
+  line-height: 7rem;
+  color: #3a3a3a;
+}
+
+h2 {
+  font-weight: 700;
+  font-size: 3.8rem;
+  line-height: 6rem;
+  color: #0a0826;
+}
+
+h3 {
+  font-weight: 600;
+  font-size: 2.8rem;
+  line-height: 7rem;
+  color: #3a3a3a;
+}
+
+h4 {
+  font-weight: 500;
+  font-size: 2.8rem;
+  line-height: 4rem;
+  font-feature-settings: "liga" off;
+  color: #18191f;
+}
+
+h5 {
+  font-weight: 700;
+  font-size: 2.4rem;
+  line-height: 3.6rem;
+  font-feature-settings: "liga" off;
+  color: #3a3a3a;
+}
+
+p {
+  font-weight: 600;
+  font-size: 1.6rem;
+  line-height: 2.4rem;
+  font-feature-settings: "liga" off;
+}
+
+li {
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 24px;
+  font-feature-settings: "liga" off;
+  color: #3a3a3a;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.click_button {
+  border: none;
+  padding: 10px 24px;
+  width: fit-content;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 24px;
+  color: #ffffff;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+/* for 600px mobile device */
+@media only screen and (max-width: 600px) {
+  body,
+  html {
+    font-size: 8px;
+  }
+}

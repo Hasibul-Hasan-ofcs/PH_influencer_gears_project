@@ -1,0 +1,117 @@
+header {
+  height: 69.5rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.navigation {
+  width: 115rem;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 9rem 0 0 0;
+}
+
+.nav_items ul {
+  list-style: none;
+  display: flex;
+  gap: 2rem;
+  align-items: center;
+}
+
+.nav_items ul li {
+  transition: all 0.4s cubic-bezier(0.19, 1, 0.22, 1);
+  border-radius: 5px;
+  padding: 1rem;
+  cursor: pointer;
+}
+
+.nav_items ul li ul li:hover {
+  background-color: rgba(0, 0, 0, 0.06);
+}
+
+.nav_items ul li img.search_img {
+  height: 2.4rem;
+}
+
+.nav_items ul li img.cart_img {
+  height: 3.6rem;
+}
+
+.header_main {
+  max-width: 115rem;
+  height: calc(100vh - 133px);
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+}
+
+.header_left {
+  width: calc(100% - 47rem);
+  display: flex;
+  flex-direction: column;
+  gap: 2.3rem;
+}
+
+.header_left .click_button {
+  background: #e02c6d;
+  border-radius: 5rem;
+}
+
+.header_right {
+  height: 47rem;
+  width: 47rem;
+  background-image: url("../images/main-camera.png"),
+    url("../images/Circle\ design.svg");
+  background-repeat: no-repeat;
+  background-size: 90%, cover;
+  background-position: 27% center;
+}
+
+/* for 1150px */
+@media only screen and (max-width: 1150px) {
+  .navigation {
+    width: 100%;
+  }
+}
+
+/* for 600px mobile device */
+@media only screen and (max-width: 600px) {
+  header {
+    height: fit-content;
+    min-height: 69.5rem;
+  }
+
+  .navigation {
+    padding: 3rem 0 0 0;
+  }
+
+  .nav_desk {
+    display: none;
+  }
+
+  .header_main {
+    flex-direction: column-reverse;
+    height: fit-content;
+    padding: 10rem 0;
+  }
+
+  .header_right {
+    height: 25.7rem;
+    width: 25.7rem;
+  }
+
+  .header_left {
+    width: fit-content;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .header_left h1,
+  .header_left p {
+    text-align: center;
+  }
+}

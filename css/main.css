@@ -1,0 +1,152 @@
+.companies {
+  max-width: 111rem;
+  margin: 0 auto;
+  border-image: linear-gradient(to right, transparent, #dbe2ea, transparent) 30;
+  border-top: 1px;
+  border-bottom: 1px;
+  border-left: 0;
+  border-right: 0;
+  border-style: solid;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6rem;
+  padding: 3.6rem 0;
+}
+
+/* popular_collections */
+
+.popular_collections {
+  padding: 12rem 0;
+  max-width: 111rem;
+  margin: 0 auto;
+}
+
+.popular_collections h4 {
+  font-weight: 600;
+  color: #3a3a3a;
+  text-align: center;
+}
+
+.collection_box {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 5rem 3rem;
+  padding-top: 6rem;
+}
+
+.card {
+  box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.15);
+  width: max-content;
+  padding: 1.5rem;
+  justify-self: center;
+  border-radius: 5px;
+  transition: all 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+  cursor: pointer;
+}
+
+.card:hover {
+  box-shadow: 0px 3px 8px rgba(0, 0, 0, 0.3);
+}
+
+.card h3 {
+  line-height: 5rem;
+}
+
+.card p {
+  color: #6c6c6c;
+}
+
+.card h3:first-of-type {
+  margin-top: 1rem;
+}
+
+.card .card_price {
+  font-weight: 400;
+}
+
+.card .rating {
+  display: flex;
+  align-items: center;
+}
+
+.card .rating p {
+  padding-left: 2rem;
+}
+
+.card .rating img {
+  height: 1.6rem;
+}
+
+.card .rating img.half_fill {
+  height: 1.75rem;
+}
+
+.popular_collections .see_more {
+  display: flex;
+  align-items: center;
+  justify-content: right;
+  padding: 7rem 0;
+}
+
+.popular_collections .see_more .click_button {
+  color: #e02c6d;
+  padding: 0;
+}
+
+/* featured_products */
+.featured_products {
+  width: 114rem;
+  margin: 0 auto;
+  display: flex;
+  gap: 10rem;
+}
+
+.featured_products div {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.featured_products div p {
+  color: #6c6c6c;
+  font-weight: 700;
+}
+
+.featured_products div .click_button {
+  background-color: #e02c6d;
+}
+
+/* media query */
+/* for 600px mobile device */
+@media only screen and (max-width: 600px) {
+  .companies {
+    max-width: 100%;
+    flex-wrap: wrap;
+    padding: 0 3rem;
+  }
+
+  .collection_box {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .featured_products {
+    width: 100%;
+    padding: 2rem;
+    flex-direction: column-reverse;
+    align-items: center;
+  }
+
+  .featured_products .gear_image {
+    width: 100%;
+  }
+
+  .featured_products div {
+    align-items: center;
+  }
+
+  .featured_products p,
+  .featured_products h2 {
+    text-align: center;
+  }
+}
